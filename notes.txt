@@ -1,0 +1,27 @@
+the review title
+body
+star rating
+review date
+
+From Review table:
+
+  - the review title
+    .review-title
+  
+  
+  - body
+    .review-text
+  
+  
+  - star rating
+    .review-rating .a-icon-alt
+    dohvati prvi znak teksta
+  
+  
+  
+  - review date
+    .review-date
+      - remove first 3 letters "on June 27, 2016"
+  
+  - reviews
+    .reviews

@@ -1,0 +1,19 @@
+{
+  "name": "amazon-product-scraper",
+  "version": "1.0.0",
+  "description": "Amazon review scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Domagoj Katavic domo1503@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.14.0",
+    "json2csv": "^3.5.1",
+    "phantom": "^2.1.10",
+    "request-promise": "^3.0.0",
+    "timeout-as-promise": "^1.0.0"
+  }
+}
