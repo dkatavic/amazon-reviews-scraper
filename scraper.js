@@ -15,6 +15,7 @@ function randomDelay(){
 }
 
 function areReviewsDone() {
+  // if there are more then 250 reviews, get just last 250
   return reviews.length >= 250;
 }
 

@@ -22,8 +22,6 @@ module.exports = {
       
       json2csv({ data: params.reviews, fields: fields }, function(err, csv) {
         if (err) {
-          console.error("json2csv #321");
-          console.error(err);
           return reject(err);
         }
         resolve(csv);

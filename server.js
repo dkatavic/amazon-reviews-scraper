@@ -9,7 +9,6 @@ var app = express(),
 
 var running = false;
 
-// TODO set running flag
 app.get('/scrap', function(req, res){
   
   var url = req.query.url;
@@ -57,9 +56,6 @@ app.get('/scrap', function(req, res){
 });
 
 app.get('/download', function(req, res){
-  // check for reviews.csv
-  //  if exists, serve it
-  //  if not, tell him to wait a bit
   
   if (running) {
     return res.send('Scraping is still running. Please try again in a few moments');
