@@ -42,6 +42,8 @@ app.get('/scrap', function(req, res){
   scraper.phantom({
     url: url
   }).then(reviews => {
+    console.log("all reviews");
+    console.log(reviews);
     return csv.toCSV({reviews: reviews});
   })
   .then(csv => {

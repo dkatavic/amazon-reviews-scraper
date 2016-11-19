@@ -16,7 +16,7 @@ function randomDelay(){
 
 function areReviewsDone() {
   // if there are more then 250 reviews, get just last 250
-  return reviews.length >= 250;
+  return reviews.length >= 500;
 }
 
 // strip query string from url if exists
@@ -45,6 +45,7 @@ function scrapPagePhantom(params){
     return sitepage.property('content');
   })
   .then(content => {
+    sitepage.render('./pageNumber' + pageNumber + '.jpg');
     var parsedReviews = parser.parseReviews({data: content});
     reviews = reviews.concat(parsedReviews);
     

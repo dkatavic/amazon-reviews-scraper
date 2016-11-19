@@ -40,10 +40,10 @@ module.exports = {
     
     var $ = cheerio.load(params.data);
     
-    var reviews = $(".reviews .review");
+    var reviews = $(".review-views .review");
     
     var parsedReviews = [];
-    
+    console.log("reviews page length: ", reviews.length);
     reviews.each(function(i, el) {
       var review = parseReview(cheerio(el));
       parsedReviews.push(review);
